@@ -9,7 +9,7 @@
                  [luminus/config "0.5"]
                  [ring-middleware-format "0.7.0"]
                  [metosin/ring-http-response "0.6.5"]
-                 [bouncer "1.0.0"]
+                 [bouncer "1.0.1"]
                  [org.webjars/bootstrap "4.0.0-alpha.2"]
                  [org.webjars/font-awesome "4.5.0"]
                  [org.webjars.bower/tether "1.1.1"]
@@ -88,7 +88,7 @@
                                  [lein-doo "0.1.6"]
                                  [lein-figwheel "0.5.0-6"]
                                  [mvxcvi/puget "1.0.0"]]
-                  :plugins [[lein-figwheel "0.5.0-6"] [lein-doo "0.1.6"] [org.clojure/clojurescript "1.7.228"]]
+                  :plugins [[lein-figwheel "0.5.0-6"] [lein-doo "0.1.6"] [org.clojure/clojurescript "1.7.228"] [cider/cider-nrepl "0.15.0-SNAPSHOT"]]
                    :cljsbuild
                    {:builds
                     {:app
