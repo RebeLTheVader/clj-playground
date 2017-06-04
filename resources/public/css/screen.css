@@ -3,6 +3,18 @@ body {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     height: 100%;
 }
+
+.modal-dialog {
+    z-index: 100;
+    margin: auto;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+}
+.modal-backdrop {
+z-index: 1;
+}
 .navbar {
   margin-bottom: 10px;
 }
