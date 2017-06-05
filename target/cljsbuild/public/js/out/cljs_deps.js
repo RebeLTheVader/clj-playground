@@ -33,6 +33,7 @@ goog.addDependency("../reagent/impl/component.js", ['reagent.impl.component'], [
 goog.addDependency("../reagent/impl/template.js", ['reagent.impl.template'], ['reagent.impl.util', 'reagent.interop', 'reagent.ratom', 'cljs.core', 'reagent.impl.batching', 'reagent.impl.component', 'reagent.debug', 'clojure.string']);
 goog.addDependency("../reagent/core.js", ['reagent.core'], ['reagent.impl.util', 'reagent.interop', 'reagent.ratom', 'cljs.core', 'cljsjs.react', 'reagent.impl.template', 'reagent.impl.batching', 'reagent.impl.component', 'reagent.debug']);
 goog.addDependency("../reagent/session.js", ['reagent.session'], ['reagent.core', 'cljs.core']);
+goog.addDependency("../megasite/components/login.js", ['megasite.components.login'], ['megasite.components.common', 'ajax.core', 'reagent.session', 'reagent.core', 'cljs.core', 'goog.crypt.base64', 'clojure.string']);
 goog.addDependency("../clojure/walk.js", ['clojure.walk'], ['cljs.core']);
 goog.addDependency("../secretary/core.js", ['secretary.core'], ['cljs.core', 'clojure.string', 'clojure.walk']);
 goog.addDependency("../megasite/ajax.js", ['megasite.ajax'], ['ajax.core', 'cljs.core']);
@@ -46,7 +47,7 @@ goog.addDependency("../bouncer/validators.js", ['bouncer.validators'], ['cljs.co
 goog.addDependency("../bouncer/core.js", ['bouncer.core'], ['goog.string', 'cljs.core', 'goog.string.format']);
 goog.addDependency("../megasite/validation.js", ['megasite.validation'], ['bouncer.validators', 'bouncer.core', 'cljs.core']);
 goog.addDependency("../megasite/components/registration.js", ['megasite.components.registration'], ['megasite.components.common', 'ajax.core', 'reagent.session', 'reagent.core', 'cljs.core', 'megasite.validation']);
-goog.addDependency("../megasite/core.js", ['megasite.core'], ['megasite.components.common', 'ajax.core', 'markdown.core', 'reagent.session', 'reagent.core', 'cljs.core', 'goog.history.EventType', 'goog.History', 'secretary.core', 'megasite.ajax', 'goog.events', 'megasite.components.registration']);
+goog.addDependency("../megasite/core.js", ['megasite.core'], ['megasite.components.common', 'ajax.core', 'markdown.core', 'reagent.session', 'reagent.core', 'cljs.core', 'megasite.components.login', 'goog.history.EventType', 'goog.History', 'secretary.core', 'megasite.ajax', 'goog.events', 'megasite.components.registration']);
 goog.addDependency("../cljs/core/async/impl/protocols.js", ['cljs.core.async.impl.protocols'], ['cljs.core']);
 goog.addDependency("../cljs/core/async/impl/buffers.js", ['cljs.core.async.impl.buffers'], ['cljs.core', 'cljs.core.async.impl.protocols']);
 goog.addDependency("../cljs/core/async/impl/dispatch.js", ['cljs.core.async.impl.dispatch'], ['cljs.core', 'cljs.core.async.impl.buffers', 'goog.async.nextTick']);

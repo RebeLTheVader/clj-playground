@@ -8,7 +8,8 @@
             [megasite.ajax :refer [load-interceptors!]]
             [megasite.components.common :as c]
             [megasite.components.registration :as reg]
-            [ajax.core :refer [GET POST]])
+            [megasite.components.login :as l]
+            [ajax.core :as ajax :refer [GET POST]])
   (:import goog.History))
 
 (defn modal []
@@ -20,9 +21,11 @@
     [:ul.nav.navbar-nav.pull-xs-right
      [:li.nav-item
       [:a.dropdown-item.btn
-       {:on-click #(session/remove! :identity)}
+       {:on-click #(ajax/POST "/logout"
+                              {:handler (fn [] (session/remove! :identity))})}
        [:i.fa.fa-user] " " id " | sign out"]]]
     [:ul.nav.navbar-nav.pull-xs-right
+     [:li.nav-item [l/login-button]]
      [:li.nav-item [reg/registration-button]]]))
 
 (defn nav-link [uri title page collapsed?]

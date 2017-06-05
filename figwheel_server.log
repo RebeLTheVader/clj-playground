@@ -454,3 +454,25 @@ notifying browser that file changed:  out/megasite/components/registration.js
 [0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
 notifying browser that file changed:  out/megasite/components/registration.js
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.152 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/megasite/components/login.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.437 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  out/megasite/components/login.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.204 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: No such namespace: ajax, could not locate ajax.cljs, ajax.cljc, or Closure namespace "" at line 24 src/cljs/megasite/core.cljs
+WARNING: Use of undeclared Var ajax/POST at line 24 src/cljs/megasite/core.cljs
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/megasite/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.483 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: No such namespace: ajax, could not locate ajax.cljs, ajax.cljc, or Closure namespace "" at line 24 /home/rebel/developer/megasite/src/cljs/megasite/core.cljs
+WARNING: Use of undeclared Var ajax/POST at line 24 /home/rebel/developer/megasite/src/cljs/megasite/core.cljs
+notifying browser that file changed:  out/megasite/components/login.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.21 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  out/megasite/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.149 seconds.[0m
