@@ -775,3 +775,21 @@ java.lang.NullPointerException
 [2017-06-06 11:43:37,767][INFO][org.projectodd.wunderboss.web.Web] Registered web context /
 [2017-06-06 11:43:37,768][INFO][luminus.http-server] server started on port 3000
 [2017-06-06 11:43:39,302][DEBUG][org.jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[2017-06-06 12:05:42,169][INFO][luminus.repl-server] nREPL server stopped
+[2017-06-06 12:05:42,224][INFO][megasite.handler] megasite is shutting down...
+[2017-06-06 12:05:42,226][INFO][com.zaxxer.hikari.pool.HikariPool] HikariPool-0 - is closing down.
+[2017-06-06 12:05:42,242][INFO][megasite.handler] #'megasite.db.core/*db* stopped
+[2017-06-06 12:05:42,243][INFO][megasite.handler] shutdown complete!
+[2017-06-06 12:05:42,246][DEBUG][org.projectodd.wunderboss.WunderBoss] Returning existing component for org.projectodd.wunderboss.web.Web:-1645144552, ignoring options.
+[2017-06-06 12:05:42,281][INFO][luminus.http-server] HTTP server stopped
+[2017-06-06 15:52:04,411][DEBUG][org.jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[2017-06-06 15:52:04,929][INFO][luminus.repl-server] nREPL server started on port 7000
+[2017-06-06 15:52:04,933][INFO][com.zaxxer.hikari.HikariDataSource] HikariPool-0 - is starting.
+[2017-06-06 15:52:05,043][INFO][megasite.handler] #'megasite.db.core/*db* started
+[2017-06-06 15:52:05,044][INFO][megasite.config] 
+-=[megasite started successfully using the development profile]=-
+[2017-06-06 15:52:05,071][INFO][org.xnio] XNIO version 3.4.0.Beta1
+[2017-06-06 15:52:05,120][INFO][org.xnio.nio] XNIO NIO Implementation Version 3.4.0.Beta1
+[2017-06-06 15:52:05,161][INFO][org.projectodd.wunderboss.web.Web] Registered web context /
+[2017-06-06 15:52:05,161][INFO][luminus.http-server] server started on port 3000
+[2017-06-06 15:52:45,800][DEBUG][org.jboss.logging] Logging Provider: org.jboss.logging.Log4jLoggerProvider

@@ -9,6 +9,16 @@
 (defn encode-auth [user pass]
   (->> (str user ":" pass) (b64/encodeString) (str "Basic ")))
 
+(def timeout-ms (* 1000 60 30))
+
+(defn session-timer []
+  (when (session/get :identity)
+    (if (session/get :user-event)
+      (do
+        (session/remove! :user-event)
+        (js/setTimeout #(session-timer) timeout-ms))
+      (session/remove! :identity))))
+
 (defn login! [fields error]
   (let [{:keys [id pass]} @fields]
     (reset! error nil)
@@ -17,6 +27,7 @@
                 :handler #(do
                             (session/remove! :modal)
                             (session/put! :identity id)
+                            (js/setTimeout session-timer timeout-ms)
                             (reset! fields nil))
                 :error-handler #(reset! error (get-in % [:response :message]))})))
 
@@ -45,3 +56,4 @@
   [:a.btn.btn-primary.btn-sm
    {:on-click #(session/put! :modal login-form)}
    "login"])
+

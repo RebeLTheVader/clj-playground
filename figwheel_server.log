@@ -481,3 +481,21 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.j
 notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
 notifying browser that file changed:  out/megasite/core.js
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.833 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: Use of undeclared Var megasite.ajax/user-action at line 20 src/cljs/megasite/ajax.cljs
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/megasite/ajax.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.904 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: Use of undeclared Var megasite.ajax/user-action at line 20 src/cljs/megasite/ajax.cljs
+notifying browser that file changed:  out/megasite/ajax.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.253 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: Use of undeclared Var megasite.components.login/session-timer at line 20 /home/rebel/developer/megasite/src/cljs/megasite/components/login.cljs
+WARNING: Use of undeclared Var megasite.components.login/timeout-ms at line 20 /home/rebel/developer/megasite/src/cljs/megasite/components/login.cljs
+notifying browser that file changed:  out/megasite/components/login.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.221 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  out/megasite/components/login.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.178 seconds.[0m
