@@ -3,10 +3,10 @@ goog.provide('megasite.ajax');
 goog.require('cljs.core');
 goog.require('ajax.core');
 megasite.ajax.default_headers = (function megasite$ajax$default_headers(request){
-return cljs.core.update.call(null,cljs.core.update.call(null,request,new cljs.core.Keyword(null,"uri","uri",-774711847),(function (p1__41373_SHARP_){
-return [cljs.core.str(context),cljs.core.str(p1__41373_SHARP_)].join('');
-})),new cljs.core.Keyword(null,"headers","headers",-835030129),(function (p1__41374_SHARP_){
-return cljs.core.merge.call(null,p1__41374_SHARP_,new cljs.core.PersistentArrayMap(null, 2, ["Accept","application/transit+json","x-csrf-token",csrfToken], null));
+return cljs.core.update.call(null,cljs.core.update.call(null,request,new cljs.core.Keyword(null,"uri","uri",-774711847),(function (p1__39622_SHARP_){
+return [cljs.core.str(context),cljs.core.str(p1__39622_SHARP_)].join('');
+})),new cljs.core.Keyword(null,"headers","headers",-835030129),(function (p1__39623_SHARP_){
+return cljs.core.merge.call(null,p1__39623_SHARP_,new cljs.core.PersistentArrayMap(null, 2, ["Accept","application/transit+json","x-csrf-token",csrfToken], null));
 }));
 });
 megasite.ajax.load_interceptors_BANG_ = (function megasite$ajax$load_interceptors_BANG_(){

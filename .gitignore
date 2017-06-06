@@ -1,5 +1,5 @@
-target/*
-log/*
+/target/*
+/log/*
 .nrepl-port
-.cljs_rhino_repl/*
+/.cljs_rhino_repl/*
 figwheel_server.log

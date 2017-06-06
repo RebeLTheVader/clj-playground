@@ -23,6 +23,7 @@
 
     <script type="text/javascript">
         var context = "{{servlet-context}}";
+        var identity = {{identity|json|safe}};
         var csrfToken = "{{csrf-token}}";
     </script>
     {% script "/js/app.js" %}
