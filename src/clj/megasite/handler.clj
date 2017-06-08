@@ -2,7 +2,7 @@
   (:require [compojure.core :refer [defroutes routes wrap-routes]]
             [megasite.layout :refer [error-page]]
             [megasite.routes.home :refer [home-routes]]
-            [megasite.routes.services :refer [service-routes]]
+            [megasite.routes.services :refer [service-routes restricted-service-routes]]
             [megasite.middleware :as middleware]
             [clojure.tools.logging :as log]
             [compojure.route :as route]
@@ -34,6 +34,7 @@
 (def app-routes
   (routes
     #'service-routes
+   ;; (wrap-routes #'restricted-service-routes middleware/wrap-auth)
     (wrap-routes #'home-routes middleware/wrap-csrf)
     (route/not-found
       (:body

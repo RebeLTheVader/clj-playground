@@ -14,6 +14,5 @@ To start a web server for the application, run:
 
     lein run
 
-## License
+And follow the instructions
 
-Copyright © 2017 FIXME

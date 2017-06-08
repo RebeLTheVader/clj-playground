@@ -2,6 +2,8 @@
   (:require [ring.util.http-response :refer :all]
             [megasite.routes.services.auth :as auth]
             [compojure.api.sweet :refer :all]
+            [megasite.routes.services.upload :as upload]
+            [compojure.api.upload :refer :all]
             [schema.core :as s]))
 
 (s/defschema UserRegistration
@@ -38,3 +40,15 @@
         (auth/logout!))
   )
 
+(defapi restricted-service-routes
+  {:swagger {:uri "/swagger-ui-private"
+             :spec "/swagger-private.json"
+             :data {:info {:version "1.0.0"
+                           :title "Megasite API"
+                           :description "Private Services"}}}}
+  (POST "/upload" req
+        :multipart-params [file :- TempFileUpload]
+        :middleware [wrap-multipart-params]
+        :summary "handles image upload"
+        :return Result
+        (upload/save-image! (:identity req) file)))

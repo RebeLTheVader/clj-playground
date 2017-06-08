@@ -14,9 +14,7 @@
 (defn load-interceptors! []
   (swap! ajax/default-interceptors
          conj
-         [(ajax/to-interceptor {:name "default headers"
-                               :request default-headers})
-          (ajax/to-interceptor {:name "user action"
-                               :request user-action})]))
+         (ajax/to-interceptor {:name "default headers"
+                               :request default-headers})))
 
 

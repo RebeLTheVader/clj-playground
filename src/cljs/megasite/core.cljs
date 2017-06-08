@@ -110,7 +110,6 @@
   (r/render [#'page] (.getElementById js/document "app")))
 
 (defn init! []
-  (load-interceptors!)
   (fetch-docs!)
   (hook-browser-navigation!)
   (session/put! :identity js/identity)
