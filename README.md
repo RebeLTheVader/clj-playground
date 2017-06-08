@@ -1,6 +1,10 @@
 # megasite
 
-FIXME
+Just a demo ClojureScript SPA with Clojure backend.
+
+Registration and login/logout functions.
+
+Swagger-UI are available at http://localhost:3000/swagger-ui
 
 ## Prerequisites
 
